@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins";
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.main-div {
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+nav > h1 {
+  width: 50px;
+}
+.nav-items {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.call > h5 > img {
+  padding-right: 15px;
+  width: 30px;
+  fill: white;
+}
+
+/* hero-section */
+
+.hero-section {
+  /* border: 1px solid red; */
+  margin: 50px;
+  position: relative;
+  padding-bottom: 300px;
+}
+.headline {
+  padding-top: 80px;
+  padding-left: 50px;
+  width: 700px;
+  font-size: 60px;
+}
+
+.icon1 {
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  background-color: rgba(240, 248, 255, 0.2);
+}
+.icon1 > img {
+  width: 90px;
+  height: 50px;
+  border-radius: 30px;
+}
+.verti {
+  position: absolute;
+  right: 100px;
+  top: 165px;
+}
+.icon2 {
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: 600px;
+  top: 400px;
+  width: 280px;
+  height: 150px;
+  padding: 20px;
+  background-color: rgba(240, 248, 255, 0.2);
+}
+.icon2 > img {
+  width: 90px;
+  height: 50px;
+  border-radius: 30px;
+}
+.horizon {
+  position: absolute;
+  left: 918px;
+  top: 460px;
+}
+.learn {
+  width: 250px;
+  margin-top: 100px;
+  font-size: 25px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+/* Media query */
+/* @media only screen and (max-width: 480px) {
+  .logo-nav {
+    align-items: center;
+  }
+} */
+
+@media only screen and (max-width: 768px) {
+  .logo-nav {
+    margin-left: 200px;
+  }
+  .nav-items {
+    display: none;
+  }
+  .hero-section {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    direction: column;
+    grid-template-columns: 1fr;
+  }
+  .headline {
+    margin-top: 250px;
+    text-align: center;
+    font-size: 30px;
+    width: 450px;
+  }
+  .icon1 {
+    position: absolute;
+    justify-content: center;
+    right: 70px;
+  }
+  .learn {
+    margin-left: 150px;
+  }
+  .verti {
+    margin-right: 120px;
+  }
+}
+
+@media only screen and (min-width: 1024) {
+  nav {
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  nav > h1 {
+    width: 50px;
+  }
+  .nav-items {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .call > h5 > img {
+    padding-right: 15px;
+    width: 30px;
+    fill: white;
+  }
+
+  /* hero-section */
+
+  .hero-section {
+    /* border: 1px solid red; */
+    margin: 50px;
+    position: relative;
+    padding-bottom: 300px;
+  }
+  .headline {
+    padding-top: 80px;
+    padding-left: 50px;
+    width: 700px;
+    font-size: 60px;
+  }
+
+  .icon1 {
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.2);
+  }
+  .icon1 > img {
+    width: 90px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  .verti {
+    position: absolute;
+    right: 100px;
+    top: 165px;
+  }
+  .icon2 {
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    left: 600px;
+    top: 400px;
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    background-color: rgba(240, 248, 255, 0.2);
+  }
+  .icon2 > img {
+    width: 90px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  .horizon {
+    position: absolute;
+    left: 918px;
+    top: 460px;
+  }
+  .learn {
+    width: 250px;
+    margin-top: 100px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-weight: 500;
+    background-color: transparent;
+  }
+}
